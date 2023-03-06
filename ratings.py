@@ -14,5 +14,6 @@ def resturant_ratings(filename):
         for show in sorted_rating:
             print (f"{show} is rated a {ratings[show]}. ")
 
-        
-resturant_ratings("scores.txt")
+
+if __name__ == '__main__':    
+    resturant_ratings("scores.txt")
