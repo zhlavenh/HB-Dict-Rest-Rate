@@ -16,7 +16,10 @@ def resturant_ratings(filename):
 
     while add_resturant == "Y" or add_resturant == "y":
         res_name = input("Enter resturant name: ")
-        res_score = input("Enter score: ")
+        res_score = int(input("Enter score: "))
+        if res_score > 5 and res_score < 1:
+            print("Please enter a score between 1 and 5.")
+            continue
         ratings[res_name] = res_score
         add_resturant = input("Do you want to add a resturant. Y/N: ")
 
